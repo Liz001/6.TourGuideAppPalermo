@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/list_item_margin"
+    android:layout_marginEnd="@dimen/list_item_margin"
+    android:layout_marginStart="@dimen/list_item_margin"
+    android:layout_marginTop="@dimen/list_item_margin"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:orientation="horizontal">
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/list_item_image_width_height"
+        android:layout_height="@dimen/list_item_image_width_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/list_item_image_margin"
+        android:layout_marginEnd="@dimen/list_item_image_margin"
+        android:layout_marginStart="@dimen/list_item_image_margin"
+        android:layout_marginTop="@dimen/list_item_image_margin"
+        android:layout_weight="1"
+        android:src="@drawable/acropolis"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/list_item_textview_marginbottom"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:text="@string/textView_place_name"
+            android:textSize="@dimen/list_item_textsize_name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_place_description"
+            android:layout_width="@dimen/list_item_description_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_item_description_margin"
+            android:layout_marginStart="@dimen/list_item_description_margin"
+            android:ellipsize="end"
+            android:lines="2"
+            android:scrollHorizontally="true"
+            android:text="@string/textView_place_description"
+            android:textSize="@dimen/list_item_textsize_description"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_place_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginTop="@dimen/list_item_likes_margin"
+            android:textSize="@dimen/list_item_textsize_likes"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/list_item_price_margin"
+        android:layout_marginRight="@dimen/list_item_price_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="@dimen/list_item_textsize_price" />
+
+        <TextView
+            android:id="@+id/textView_place_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_price_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="@dimen/list_item_textsize_priceeuro"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

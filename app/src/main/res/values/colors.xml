@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Color Resourses For TourGuideApp -->
+    <color name="colorPrimary">#FF0046</color>
+    <color name="colorPrimaryDark">#CF0037</color>
+    <color name="colorAccent">#00BF9a</color>
+    <color name="colorText">#ffffff</color>
+
+
+</resources>
